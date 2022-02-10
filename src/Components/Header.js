@@ -58,7 +58,7 @@ const Container = styled.div`
     right: 0; 
     z-index: 1;
 
-    /* background-color:gray; */
+    background-color:lightgray;
 
 `
 
