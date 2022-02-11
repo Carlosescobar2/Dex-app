@@ -14,6 +14,14 @@ function Home() {
         </LogoText>
        
        <SearchBar placeholder="Search for Art" />
+
+        <HomeImages>
+            <img src="/images/DexFrontImage.jpeg" />
+            <img src="/images/EyePieaceHome.png" />
+            <img src="/images/astronautPic.png" />
+
+        </HomeImages>       
+
     </Container>
     
     
@@ -35,6 +43,14 @@ const LogoText = styled.div`
     font-style: italic;
     color:purple;
 
+`
+const HomeImages = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 500px); 
+    
+    /* img{ 
+        width:100px;
+    } */
 `
 
 export default Home;

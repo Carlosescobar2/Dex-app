@@ -9,8 +9,8 @@ function SearchBar({placeholder, data}) {
     <SearchContainer>
         <SearchInputs>
             
-            <input  typeof='text' placeholder={placeholder} icon="charm:search"/>
-        <SearchIcon icon="charm:search" />
+            <input  typeof='text' placeholder={placeholder}/>
+        <a><SearchIcon icon="charm:search" /></a>
 
         </SearchInputs>
         
