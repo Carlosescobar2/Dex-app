@@ -17,8 +17,9 @@ function Home() {
 
         <HomeImages>
             <img src="/images/DexFrontImage.jpeg" />
-            <img src="/images/EyePieaceHome.png" />
             <img src="/images/astronautPic.png" />
+            <img src="/images/EyePieaceHome.png" />
+         
 
         </HomeImages>       
 
@@ -46,11 +47,14 @@ const LogoText = styled.div`
 `
 const HomeImages = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 500px); 
-    
-    /* img{ 
-        width:100px;
-    } */
+    margin-left: 300px;
+    grid-template-columns: repeat(2, 400px); 
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    img{ 
+        height:100%;
+        width:100%;
+    }
 `
 
 export default Home;

@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import { Icon } from '@iconify/react';
 
-
+import CreateAccount from './Login/CreateAccount';
 function Header() {
 
     const[accountStatus, setaccountNav] = useState(false)
@@ -26,12 +27,11 @@ function Header() {
                 <CustomClose icon="ci:close-small" onClick={()=>setaccountNav(false)} />
             </CloseWrapper>
             
-
-                <li><a href="#">Create Account</a></li>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Profile</a></li>
-
                 
+
+            <li><NavLink to="/CreateAccount">Create Account</NavLink></li>
+            <li><NavLink to = "/Login">Log in</NavLink></li>
+            <li><NavLink to = "/Profile">Profile</NavLink></li>
 
 
             </AccountNav>
